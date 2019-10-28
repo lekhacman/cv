@@ -1,5 +1,5 @@
 import React from 'react';
-import './MyCard.css';
+import './MyCard.scss';
 import PropTypes from 'prop-types';
 
 export class MyCard extends React.Component {
@@ -7,10 +7,10 @@ export class MyCard extends React.Component {
     const { title, children } = this.props;
     return (
       <div className="mycard">
-        <div className="mycard-title">
+        <div className="mycard__title">
           <h2>{title}</h2>
         </div>
-        <div className="mycard-body">{children}</div>
+        <div className="mycard__body">{children}</div>
       </div>
     );
   }

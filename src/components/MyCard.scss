@@ -1,26 +1,26 @@
+@import "../styles/colors";
+
 .mycard {
-    color: white;
-    background-color: rgb(1, 183, 207); /*01b7cf*/
-
+    background-color: $snowSunny;
     padding-block-end: .5em;
-
     box-shadow: 0 3px 10px dimgrey;
 }
 
-.mycard-title {
+.mycard__title {
     color: yellow; /*eae846 | rgb(234,232,70)*/
-    background-color: rgba(0,0,0, .3);
+    background-color: $snowShadow;
     text-align: center;
-    padding-block-start: .2em;
-    padding-block-end: .2em;
+    padding-block-start: .1em;
+    padding-block-end: .1em;
+    min-height: 1rem;
 }
 
-.mycard-title h2 {
+.mycard__title h2 {
     margin-block-start: 0;
     margin-block-end: 0;
 }
 
-.mycard-body {
+.mycard__body {
     padding-inline-start: 2%;
     padding-inline-end: 2%;
 }
