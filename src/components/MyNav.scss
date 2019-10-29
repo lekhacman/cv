@@ -1,5 +1,6 @@
 h1 {
   margin: 1rem 0;
+  font-weight: 700;
 }
 header {
   display: flex;
@@ -18,7 +19,7 @@ header div:last-child > ul {
   flex-wrap: wrap;
 
   li {
-    margin-right: .8em;
+    margin-right: 1rem;
   }
 
   li:last-child {

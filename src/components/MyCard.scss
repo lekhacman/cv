@@ -3,11 +3,9 @@
 .mycard {
     background-color: $snowSunny;
     padding-block-end: .5em;
-    box-shadow: 0 3px 10px dimgrey;
 }
 
 .mycard__title {
-    color: yellow; /*eae846 | rgb(234,232,70)*/
     background-color: $snowShadow;
     text-align: center;
     padding-block-start: .1em;

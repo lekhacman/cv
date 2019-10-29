@@ -2,6 +2,11 @@ import React from 'react';
 import './App.scss';
 import { MyNav } from '../components/MyNav';
 import { THEME, ThemeService } from '../styles/ThemeService';
+import { MyExperience } from '../components/MyExperience';
+import { MyContact } from '../components/MyContact';
+import { MyCareer } from '../components/MyCareer';
+import { MyEdu } from '../components/MyEdu';
+import { MySkills } from '../components/MySkills';
 
 const theme = {
   base: 'App',
@@ -13,12 +18,12 @@ export class App extends React.Component {
   constructor(props) {
     super(props);
     const { _window } = props;
-    const themeService = ThemeService(_window.localStorage);
-    themeService.register();
+    this.themeService = ThemeService(_window.localStorage);
+    this.themeService.register();
     this.state = {
       theme: {
-        isLight: themeService.get() === THEME.LIGHT,
-        appClassName: `${theme.base} ${theme[themeService.get()]}`,
+        isLight: this.themeService.get() === THEME.LIGHT,
+        appClassName: `${theme.base} ${theme[this.themeService.get()]}`,
       },
     };
     this.toggleTheme = this.toggleTheme.bind(this);
@@ -32,6 +37,7 @@ export class App extends React.Component {
         appClassName: `${theme.base} ${isLight ? theme.LIGHT : theme.DARK}`,
       },
     });
+    this.themeService.set(isLight ? THEME.LIGHT : THEME.DARK);
   }
 
   render() {
@@ -45,6 +51,13 @@ export class App extends React.Component {
           isLightTheme={isLight}
           toggleTheme={this.toggleTheme}
         />
+        <main>
+          <MyContact />
+          <MyCareer />
+          <MyExperience />
+          <MyEdu />
+          <MySkills />
+        </main>
       </div>
     );
   }

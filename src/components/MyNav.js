@@ -15,11 +15,15 @@ export function MyNav(props) {
   const iconSize = '2x';
 
   function print() {
-    toggleTheme();
-    setTimeout(function() {
-      props.print();
+    if (!isLightTheme) {
       toggleTheme();
-    }, 0);
+      setTimeout(function() {
+        props.print();
+        toggleTheme();
+      }, 0);
+    } else {
+      props.print();
+    }
   }
   return (
     <header>
