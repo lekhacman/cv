@@ -1,44 +1,53 @@
 import React from 'react';
 import './App.scss';
-import { MyCard } from '../components/MyCard';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faEnvelope,
-  faPhone,
-  faPrint,
-} from '@fortawesome/free-solid-svg-icons';
+import { MyNav } from '../components/MyNav';
+import { THEME, ThemeService } from '../styles/ThemeService';
 
-function App(props) {
-  const { _window } = props;
-  const iconSize = '2x';
-  return (
-    <div className="App">
-      <header>
-        <MyCard title="">
-          <div className="header__body">
-            <h1>Andrew Le</h1>
-            <ul>
-              <li>
-                <a href="mailto:lekhacman@outlook.com">
-                  <FontAwesomeIcon icon={faEnvelope} size={iconSize} />
-                </a>
-              </li>
-              <li>
-                <a href="tel:+6587686989">
-                  <FontAwesomeIcon icon={faPhone} size={iconSize} />
-                </a>
-              </li>
-              <li>
-                <a onClick={_window.print.bind(_window)}>
-                  <FontAwesomeIcon icon={faPrint} size={iconSize} />
-                </a>
-              </li>
-            </ul>
-          </div>
-        </MyCard>
-      </header>
-    </div>
-  );
+const theme = {
+  base: 'App',
+  LIGHT: 'App--light',
+  DARK: 'App--dark',
+};
+
+export class App extends React.Component {
+  constructor(props) {
+    super(props);
+    const { _window } = props;
+    const themeService = ThemeService(_window.localStorage);
+    themeService.register();
+    this.state = {
+      theme: {
+        isLight: themeService.get() === THEME.LIGHT,
+        appClassName: `${theme.base} ${theme[themeService.get()]}`,
+      },
+    };
+    this.toggleTheme = this.toggleTheme.bind(this);
+  }
+
+  toggleTheme() {
+    const isLight = !this.state.theme.isLight;
+    this.setState({
+      theme: {
+        isLight,
+        appClassName: `${theme.base} ${isLight ? theme.LIGHT : theme.DARK}`,
+      },
+    });
+  }
+
+  render() {
+    const { _window } = this.props;
+    const { appClassName, isLight } = this.state.theme;
+
+    return (
+      <div className={appClassName}>
+        <MyNav
+          print={_window.print.bind(_window)}
+          isLightTheme={isLight}
+          toggleTheme={this.toggleTheme}
+        />
+      </div>
+    );
+  }
 }
 
 export default App;
