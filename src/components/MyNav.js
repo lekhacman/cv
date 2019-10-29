@@ -5,12 +5,13 @@ import {
   faPhone,
   faPrint,
   faMoon,
+  faSun,
 } from '@fortawesome/free-solid-svg-icons';
 import './MyNav.scss';
 import PropTypes from 'prop-types';
 
 export function MyNav(props) {
-  const { print, toggleTheme } = props;
+  const { print, toggleTheme, isLightTheme } = props;
   const iconSize = '2x';
   return (
     <header>
@@ -21,7 +22,11 @@ export function MyNav(props) {
         <ul>
           <li>
             <a href="#" onClick={toggleTheme}>
-              <FontAwesomeIcon icon={faMoon} size={iconSize} />
+              {isLightTheme ? (
+                <FontAwesomeIcon icon={faMoon} size={iconSize} />
+              ) : (
+                <FontAwesomeIcon icon={faSun} size={iconSize} />
+              )}
             </a>
           </li>
           <li>
