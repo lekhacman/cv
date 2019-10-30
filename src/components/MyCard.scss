@@ -5,6 +5,16 @@
     padding-block-end: .5em;
 }
 
+.App--dark {
+    .mycard {
+        background-color: inherit;
+    }
+
+    .mycard__title {
+        color: $snowMan;
+    }
+}
+
 .mycard__title {
     background-color: $snowShadow;
     text-align: center;
