@@ -1,3 +1,4 @@
+import './MyExperience.scss';
 import React from 'react';
 import { MyCard } from './MyCard';
 

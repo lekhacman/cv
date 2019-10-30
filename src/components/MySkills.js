@@ -1,3 +1,4 @@
+import './MySkills.scss';
 import React from 'react';
 import { MyCard } from './MyCard';
 
