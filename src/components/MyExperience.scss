@@ -1,4 +1,6 @@
-#mycard--experience {
-  grid-column: 1;
-  grid-row: 2 / 4;
+@media (min-width: 768px) {
+  #mycard--experience {
+    grid-column: 1;
+    grid-row: 2 / 4;
+  }
 }

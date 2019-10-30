@@ -1,4 +1,6 @@
-#mycard--edu {
-  grid-column: 2;
-  grid-row: 2 / 2;
+@media (min-width: 768px) {
+  #mycard--edu {
+    grid-column: 2;
+    grid-row: 2 / 2;
+  }
 }

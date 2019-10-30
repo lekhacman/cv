@@ -1,4 +1,6 @@
-#mycard--skills {
-  grid-column: 2;
-  grid-row: 3 / 4;
+@media (min-width: 768px) {
+  #mycard--skills {
+    grid-column: 2;
+    grid-row: 3 / 4;
+  }
 }
