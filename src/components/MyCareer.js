@@ -3,7 +3,7 @@ import { MyCard } from './MyCard';
 
 export function MyCareer() {
   return (
-    <MyCard title="Career Objectives">
+    <MyCard title="Career Objectives" id="career">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, quis?
       </p>

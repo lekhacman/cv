@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 
 export class MyCard extends React.Component {
   render() {
-    const { title, children } = this.props;
+    const { id, title, children } = this.props;
     return (
-      <div className="mycard mycard--light">
+      <div className="mycard mycard--light" id={`mycard--${id}`}>
         <div className="mycard__title">
           <h2>{title}</h2>
         </div>
@@ -17,6 +17,7 @@ export class MyCard extends React.Component {
 }
 
 MyCard.propTypes = {
+  id: PropTypes.string,
   title: PropTypes.string,
   children: PropTypes.arrayOf(PropTypes.element),
 };

@@ -3,7 +3,7 @@ import { MyCard } from './MyCard';
 
 export function MyExperience() {
   return (
-    <MyCard title="Experience">
+    <MyCard title="Experience" id="experience">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad delectus
         eum facere, illum in porro quibusdam sapiente suscipit tempore unde!
