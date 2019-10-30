@@ -11,20 +11,8 @@ import './MyNav.scss';
 import PropTypes from 'prop-types';
 
 export function MyNav(props) {
-  const { toggleTheme, isLightTheme } = props;
+  const { toggleTheme, isLightTheme, print } = props;
   const iconSize = '2x';
-
-  function print() {
-    if (!isLightTheme) {
-      toggleTheme();
-      setTimeout(function() {
-        props.print();
-        toggleTheme();
-      }, 0);
-    } else {
-      props.print();
-    }
-  }
   return (
     <header>
       <div>
