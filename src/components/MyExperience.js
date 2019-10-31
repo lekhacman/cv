@@ -55,7 +55,7 @@ export function MyExperience() {
         <label>Technology:</label>
         <ul className="technology-list">
           <li>JavaScript</li>
-          <li>AngularJS & Angular 6</li>
+          <li>AngularJS & Angular 7</li>
           <li>NodeJS</li>
           <li>Cordova</li>
           <li>HTML 5 / CSS 3</li>

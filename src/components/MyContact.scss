@@ -7,3 +7,9 @@
     text-decoration: none;
   }
 }
+@media (min-width: 768px) {
+  #mycard--contact {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
