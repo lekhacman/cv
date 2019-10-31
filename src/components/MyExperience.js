@@ -5,38 +5,135 @@ import { MyCard } from './MyCard';
 export function MyExperience() {
   return (
     <MyCard title="Experience" id="experience">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad delectus
-        eum facere, illum in porro quibusdam sapiente suscipit tempore unde!
-        Accusantium ad ducimus inventore iure maxime minima molestias natus nisi
-        temporibus vitae. Cumque debitis, dolores eius eos esse est laborum
-        laudantium, molestias nemo provident sapiente temporibus vel. Nihil,
-        praesentium reiciendis.
-      </p>
-      <p>
-        Aperiam consequuntur deleniti explicabo ipsam pariatur quae
-        reprehenderit temporibus totam vel voluptatem? Ad asperiores, at, autem
-        commodi corporis cupiditate dolorum earum et impedit minima molestias,
-        nam nesciunt odit perferendis perspiciatis provident quasi quidem quos
-        temporibus veniam? At dolor expedita inventore laboriosam possimus, sed!
-        Consequatur illo nobis provident? Aspernatur neque, quidem.
-      </p>
-      <p>
-        Accusamus accusantium dolorem eveniet laborum minus modi nemo odit optio
-        quasi totam. Aperiam, corporis cupiditate eum in ipsa non nulla
-        provident quas! Aperiam beatae blanditiis cum dignissimos earum fugit
-        hic, laudantium natus, perferendis, quasi sint temporibus totam vero. Ad
-        cumque delectus dignissimos ea fugiat id ipsa quam tempore, tenetur
-        veritatis?
-      </p>
-      <p>
-        Consectetur eaque et exercitationem hic incidunt quos sequi sint!
-        Accusantium ad aliquid amet error iste maxime minima praesentium, quasi
-        sed. Amet asperiores, dignissimos dolorem doloremque ea hic id illo
-        laboriosam laudantium minus, nemo pariatur quos ratione, tempora vel
-        voluptate voluptatibus! Animi, commodi cumque esse fugiat nostrum quidem
-        repellendus totam voluptatibus?
-      </p>
+      <div className="company">
+        <h3>Software Engineer</h3>
+        <p>
+          <a
+            href={'https://www.aviva.com.sg/'}
+            rel={'nofollow'}
+            className={'employerLink'}
+          >
+            Aviva Asia Pacific
+          </a>{' '}
+          <small className="text-secondary">(Jun 2018 - Present)</small>
+        </p>
+        <label>Projects:</label>
+        <ul>
+          <li>
+            <b>
+              <abbr title="Easy Submission">EzSub</abbr>
+            </b>
+            : a point of sale iOS application used by financial advisors to
+            manage and submit financial policies.
+          </li>
+          <li>
+            <b>
+              <abbr title="e-Financial Needs Analysis">eFNA</abbr>
+            </b>
+            : developing a web application which helps financial advisors
+            analyze customers&rsquo; needs and advise them suited financial
+            recommendations.
+          </li>
+        </ul>
+        <label>Technology:</label>
+        <ul>
+          <li>JavaScript</li>
+          <li>AngularJS & Angular 6</li>
+          <li>NodeJS</li>
+          <li>Cordova</li>
+          <li>HTML 5 / CSS 3</li>
+          <li>Sass lang</li>
+        </ul>
+      </div>
+      <div className="company">
+        <h3>Full-stack Software Engineer</h3>
+        <a
+          href={'https://www.lazada.com/'}
+          rel={'nofollow'}
+          className={'employerLink'}
+        >
+          Lazada eLogistics
+        </a>{' '}
+        <small className="text-secondary">(Mar 2018 - Jun 2018)</small>
+        <label>Projects:</label>
+        <ul>
+          <li>
+            <b>Logistic management system</b>: building & connecting
+            sophisticated logistic systems (seller, warehouse, express) to help
+            managing & delivering cargo become easy and efficient. The job
+            requires heavy <strong>system integration</strong> tasks, writing{' '}
+            <strong>100% coverage unit tests</strong> and handling issues on
+            production environment. Extensive usage of <em>Docker</em> container
+            & <em>microservices</em> & <em>CI/CD</em> tools.
+          </li>
+        </ul>
+        <label>Technology:</label>
+        <ul>
+          <li>ReactJS</li>
+          <li>Redux</li>
+          <li>Golang</li>
+          <li>PHP, Laravel</li>
+          <li>Docker</li>
+          <li>Kubernetes</li>
+          <li>Redis</li>
+          <li>RabbitMQ</li>
+          <li>PostgreSQL</li>
+          <li>HTML 5 / CSS 3</li>
+          <li>Sass lang</li>
+        </ul>
+      </div>
+      <div className="company">
+        <h3>Software Engineer</h3>
+        <a
+          href={'http://www.dxc.technology/'}
+          rel={'nofollow'}
+          className={'employerLink'}
+        >
+          DXC Technology
+        </a>{' '}
+        <small className={'text-secondary'}>(Jun 2016 - Mar 2018)</small>
+        <p>
+          From <b>junior developer</b> to <b>system integration leader</b> (what
+          a journey)
+        </p>
+        Projects:
+        <ul>
+          <li>
+            <b>
+              <abbr title="Integral Point of Sale">IPOS</abbr> Agent sales
+            </b>
+            : sophisticated insurance software used as a point of sale and
+            financial analysis application for financial advisors. The systems
+            was built based on complex <strong>microservices </strong>
+            software architecture.
+          </li>
+          <li>
+            <b>
+              <abbr title="Integral Point of Sale">IPOS</abbr> Direct sale
+            </b>
+            : Straightforward point of sale for end customers to purchase
+            insurance products. The application was built using{' '}
+            <b>the most advanced frontend technologies</b> at the time (2018)
+            backing by complex IPOS&rsquo;s microservices.
+          </li>
+        </ul>
+        Technology:
+        <ul>
+          <li>JavaScript (vanilla)</li>
+          <li>AngularJS</li>
+          <li>NodeJS, ExpressJS</li>
+          <li>Golang</li>
+          <li>Java, Spring</li>
+          <li>MySQL, Microsoft SQL</li>
+          <li>ElasticSearch, MongoDB</li>
+          <li>eSignature</li>
+          <li>Mule ESB</li>
+          <li>Docker</li>
+          <li>Amazon Web Services (AWS)</li>
+          <li>HTML 5 / CSS 3</li>
+          <li>Sass lang</li>
+        </ul>
+      </div>
     </MyCard>
   );
 }
