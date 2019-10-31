@@ -1,0 +1,10 @@
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  grid-gap: .5rem;
+  padding: 1rem 0;
+
+  a {
+    text-decoration: none;
+  }
+}

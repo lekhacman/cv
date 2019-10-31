@@ -1,11 +1,21 @@
+import './MyContact.scss';
 import React from 'react';
 import { MyCard } from './MyCard';
 
 export function MyContact() {
   return (
     <MyCard title="Contact" id="contact">
-      <p>Lorem ipsum dolor sit.</p>
-      <p>Distinctio incidunt neque quas.</p>
+      <div className="contact">
+        <label>Phone</label>
+        <span>
+          <a href="tel:+6587686989">+65 8768 6989</a>
+        </span>
+
+        <label>Email</label>
+        <span>
+          <a href="mailto:lekhacman@outlook.com">lekhacman@outlook.com</a>
+        </span>
+      </div>
     </MyCard>
   );
 }
