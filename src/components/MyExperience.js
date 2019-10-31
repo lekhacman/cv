@@ -6,6 +6,23 @@ export function MyExperience() {
   return (
     <MyCard title="Experience" id="experience">
       <div className="company">
+        <h3>Full-stack Software Engineer</h3>
+        <p>
+          <a
+            href={'https://www.spgroup.com.sg/'}
+            rel={'nofollow'}
+            className={'employerLink'}
+          >
+            Singapore Power
+          </a>{' '}
+          <small className="text-secondary">(Dec 2019 - Current)</small>
+        </p>
+        <label>Projects:</label>
+        <ul></ul>
+        <label>Technology:</label>
+        <ul></ul>
+      </div>
+      <div className="company">
         <h3>Software Engineer</h3>
         <p>
           <a
@@ -15,7 +32,7 @@ export function MyExperience() {
           >
             Aviva Asia Pacific
           </a>{' '}
-          <small className="text-secondary">(Jun 2018 - Present)</small>
+          <small className="text-secondary">(Jun 2018 - Nov 2019)</small>
         </p>
         <label>Projects:</label>
         <ul>
@@ -36,7 +53,7 @@ export function MyExperience() {
           </li>
         </ul>
         <label>Technology:</label>
-        <ul>
+        <ul className="technology-list">
           <li>JavaScript</li>
           <li>AngularJS & Angular 6</li>
           <li>NodeJS</li>
@@ -47,14 +64,16 @@ export function MyExperience() {
       </div>
       <div className="company">
         <h3>Full-stack Software Engineer</h3>
-        <a
-          href={'https://www.lazada.com/'}
-          rel={'nofollow'}
-          className={'employerLink'}
-        >
-          Lazada eLogistics
-        </a>{' '}
-        <small className="text-secondary">(Mar 2018 - Jun 2018)</small>
+        <p>
+          <a
+            href={'https://www.lazada.com/'}
+            rel={'nofollow'}
+            className={'employerLink'}
+          >
+            Lazada eLogistics
+          </a>{' '}
+          <small className="text-secondary">(Mar 2018 - Jun 2018)</small>
+        </p>
         <label>Projects:</label>
         <ul>
           <li>
@@ -68,7 +87,7 @@ export function MyExperience() {
           </li>
         </ul>
         <label>Technology:</label>
-        <ul>
+        <ul className="technology-list">
           <li>ReactJS</li>
           <li>Redux</li>
           <li>Golang</li>
@@ -84,19 +103,21 @@ export function MyExperience() {
       </div>
       <div className="company">
         <h3>Software Engineer</h3>
-        <a
-          href={'http://www.dxc.technology/'}
-          rel={'nofollow'}
-          className={'employerLink'}
-        >
-          DXC Technology
-        </a>{' '}
-        <small className={'text-secondary'}>(Jun 2016 - Mar 2018)</small>
+        <p>
+          <a
+            href={'http://www.dxc.technology/'}
+            rel={'nofollow'}
+            className={'employerLink'}
+          >
+            DXC Technology
+          </a>{' '}
+          <small className={'text-secondary'}>(Jun 2016 - Mar 2018)</small>
+        </p>
         <p>
           From <b>junior developer</b> to <b>system integration leader</b> (what
           a journey)
         </p>
-        Projects:
+        <label>Projects:</label>
         <ul>
           <li>
             <b>
@@ -117,8 +138,8 @@ export function MyExperience() {
             backing by complex IPOS&rsquo;s microservices.
           </li>
         </ul>
-        Technology:
-        <ul>
+        <label>Technology:</label>
+        <ul className="technology-list">
           <li>JavaScript (vanilla)</li>
           <li>AngularJS</li>
           <li>NodeJS, ExpressJS</li>
