@@ -5,11 +5,11 @@ export function MyCareer() {
   return (
     <MyCard title="Career Objectives" id="career">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, quis?
+        <strong>Short term: </strong>Develop useful applications for enterprises
       </p>
       <p>
-        Asperiores atque necessitatibus porro quidem vitae? Consequatur enim
-        expedita quibusdam!
+        <strong>Long term: </strong>Providing digital transformation services
+        for business
       </p>
     </MyCard>
   );
