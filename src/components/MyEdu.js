@@ -9,15 +9,13 @@ export function MyEdu() {
       <p>Bachelor of Business Administration & Marketing</p>
 
       <h3>Awards</h3>
-      <p>
-        <ul>
-          <li>Outstanding performance in the Java Fresher program</li>
-          <li>
-            Third prize in UEH 500 contest: busi- ness project - Mobifood
-            business develop- ment
-          </li>
-        </ul>
-      </p>
+      <ul>
+        <li>Outstanding performance in the Java Fresher program</li>
+        <li>
+          Third prize in UEH 500 business startup contest: Mobifood business
+          development
+        </li>
+      </ul>
     </MyCard>
   );
 }

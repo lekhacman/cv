@@ -16,6 +16,7 @@ export function MyContact() {
           <a href="mailto:lekhacman@outlook.com">lekhacman@outlook.com</a>
         </span>
       </div>
+      <div></div>
     </MyCard>
   );
 }

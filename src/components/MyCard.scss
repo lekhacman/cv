@@ -2,7 +2,6 @@
 
 .mycard {
     background-color: $snowSunny;
-    padding-block-end: .5em;
 }
 
 .App--dark {
@@ -29,6 +28,5 @@
 }
 
 .mycard__body {
-    padding-inline-start: 2%;
-    padding-inline-end: 2%;
+    padding: .8rem 2%;
 }
