@@ -18,6 +18,10 @@
 }
 
 .technology-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-flow: row wrap;
+
+  li {
+    margin-right: 2rem;
+  }
 }

@@ -14,7 +14,7 @@ export class MyNav extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      menu: false,
+      menu: true,
     };
     this.toggleMenu = this.toggleMenu.bind(this);
   }
