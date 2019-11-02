@@ -1,5 +1,5 @@
-@import "~bootstrap/scss/bootstrap-grid";
-@import "~bootstrap/scss/utilities/float";
+//@import "~bootstrap/scss/bootstrap-grid";
+//@import "~bootstrap/scss/utilities/float";
 @import "styles/colors";
 
 html {
@@ -24,4 +24,13 @@ code {
 
 a {
   color: $snowMan;
+}
+@media print {
+  html {
+    background-color: unset;
+  }
+}
+@page  {
+  size: A4;
+  margin: .5in;
 }

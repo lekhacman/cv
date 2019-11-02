@@ -17,9 +17,9 @@ export function MyExperience() {
           </a>{' '}
           <small className="text-secondary">(Dec 2019 - Current)</small>
         </p>
-        <label>Projects:</label>
+        <label>Projects: TBD</label>
         <ul></ul>
-        <label>Technology:</label>
+        <label>Technology: TBD</label>
         <ul></ul>
       </div>
       <div className="company">
@@ -93,11 +93,9 @@ export function MyExperience() {
           <li>Golang</li>
           <li>PHP, Laravel</li>
           <li>Docker</li>
-          <li>Kubernetes</li>
           <li>Redis</li>
-          <li>RabbitMQ</li>
           <li>PostgreSQL</li>
-          <li>HTML 5 / CSS 3</li>
+          <li>HTML/CSS</li>
           <li>Sass lang</li>
         </ul>
       </div>
@@ -140,7 +138,7 @@ export function MyExperience() {
         </ul>
         <label>Technology:</label>
         <ul className="technology-list">
-          <li>JavaScript (vanilla)</li>
+          <li>JavaScript</li>
           <li>AngularJS</li>
           <li>NodeJS, ExpressJS</li>
           <li>Golang</li>

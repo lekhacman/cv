@@ -1,28 +1,47 @@
+@import "../styles/colors";
+$hamburger-layer-color: $snowMan;
+
+@import "~animate.css/animate.min.css";
+@import "~hamburgers/_sass/hamburgers/hamburgers";
+
+.App--dark {
+  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    background-color: $snowWhite;
+  }
+  .hamburger.is-active {
+    .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+      background-color: $snowWhite;
+    }
+  }
+}
+
 h1 {
   margin: 1rem 0;
   font-weight: 700;
 }
-header {
+header nav {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: space-between;
 
-  padding: .5rem 1rem;
+  //padding: .5rem 1rem;
 }
 
 header div:last-child > ul {
   list-style: none;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: .8rem;
 
   li {
-    margin-right: 1rem;
+    text-align: center;
   }
+}
 
-  li:last-child {
-    margin-right: 0;
+@media print {
+  header .actions {
+    display: none;
   }
 }

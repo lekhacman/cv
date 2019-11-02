@@ -2,10 +2,3 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-
-@media (min-width: 768px) {
-  #mycard--experience {
-    grid-column: 1;
-    grid-row: 1 / 5;
-  }
-}

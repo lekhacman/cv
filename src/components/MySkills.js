@@ -34,7 +34,7 @@ export function MySkills() {
       rating: '40%',
     },
     aws: {
-      title: 'Amazon Web Services',
+      title: 'AWS Cloud',
       rating: '60%',
     },
   };
@@ -50,10 +50,9 @@ export function MySkills() {
               key={`score-${key}`}
               style={{ gridRow: idx + 1 }}
             >
-              <div
-                className="score-bar__score"
-                style={{ width: skill.rating }}
-              />
+              <div className="score-bar__score" style={{ width: skill.rating }}>
+                <span>{skill.rating}</span>
+              </div>
             </div>
           ),
         },
@@ -63,7 +62,7 @@ export function MySkills() {
     { labels: [], skills: [] }
   );
   return (
-    <MyCard title="Skills Set" id="skills">
+    <MyCard title="Skills" id="skills">
       <div className="skills">
         {labels}
         {skills}

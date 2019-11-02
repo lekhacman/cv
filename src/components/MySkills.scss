@@ -5,6 +5,9 @@
   grid-template-columns: 1fr 1fr;
   grid-gap: .2rem;
   grid-column-gap: .5rem;
+  justify-self: stretch;
+
+  margin: 0 1rem;
 
   label {
     grid-column: 1;
@@ -18,13 +21,17 @@
     .score-bar__score {
       background-color: $snowShadow;
       height: 1rem;
+
+      span {
+        display: none;
+      }
+
+      @media print {
+        span {
+          display: inherit;
+        }
+      }
     }
   }
 
-}
-@media (min-width: 768px) {
-  #mycard--skills {
-    grid-column: 2;
-    grid-row: 4;
-  }
 }
