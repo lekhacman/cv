@@ -11,47 +11,16 @@ import './MyNav.scss';
 import PropTypes from 'prop-types';
 
 export class MyNav extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      menu: true,
-    };
-    this.toggleMenu = this.toggleMenu.bind(this);
-  }
-
-  toggleMenu() {
-    this.setState({ menu: !this.state.menu });
-  }
-
   render() {
     const { toggleTheme, isLightTheme, print } = this.props;
-    const { menu } = this.state;
     const iconSize = '2x';
 
     return (
       <header>
-        <nav>
-          <div>
-            <h1>Andrew Le</h1>
-          </div>
-          <div>
-            <button
-              className={`hamburger hamburger--spin ${
-                menu ? 'is-active' : null
-              }`}
-              type="button"
-              onClick={this.toggleMenu}
-            >
-              <span className="hamburger-box">
-                <span className="hamburger-inner"></span>
-              </span>
-            </button>
-          </div>
-        </nav>
-        <div
-          className={`actions ${menu ? 'animated flipInX' : ''}`}
-          style={{ display: menu ? null : 'none' }}
-        >
+        <div>
+          <h1>Andrew Le</h1>
+        </div>
+        <div>
           <ul>
             <li>
               <a href="#" onClick={toggleTheme}>

@@ -1,48 +1,65 @@
-@import "../styles/colors";
+//@import "../styles/colors";
 @import "../styles/screen";
-$hamburger-layer-color: $snowMan;
-
-@import "~animate.css/animate.min.css";
-@import "~hamburgers/_sass/hamburgers/hamburgers";
-
-.App--dark {
-  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-    background-color: $snowWhite;
-  }
-  .hamburger.is-active {
-    .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-      background-color: $snowWhite;
-    }
-  }
-}
-
+//$hamburger-layer-color: $snowMan;
+//
+//@import "~animate.css/animate.min.css";
+//@import "~hamburgers/_sass/hamburgers/hamburgers";
+//
+//.App--dark {
+//  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+//    background-color: $snowWhite;
+//  }
+//  .hamburger.is-active {
+//    .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+//      background-color: $snowWhite;
+//    }
+//  }
+//}
+//
 h1 {
   margin: 1rem 0;
   font-weight: 700;
 }
-header nav {
+//header nav {
+//  display: flex;
+//  flex-flow: row wrap;
+//  align-items: center;
+//  justify-content: space-between;
+//
+//  //padding: .5rem 1rem;
+//}
+//
+header {
   display: flex;
   flex-flow: row wrap;
-  align-items: center;
-  justify-content: space-between;
 
-  //padding: .5rem 1rem;
 }
 
-header div:last-child > ul {
+header div {
+  flex: 1 auto;
+}
+
+header > div:last-child > ul {
   list-style: none;
   padding: 0;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: .8rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
 
+  @media (min-width: $screen-sm) {
+    justify-content: flex-end;
+  }
+
+  li:first-child {
+    margin-left: 0;
+  }
   li {
-    text-align: center;
+    margin-left: 1rem;
   }
 }
 
 @media print {
-  header .actions {
+  header div:last-child {
     display: none;
   }
 }
