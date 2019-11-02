@@ -1,4 +1,5 @@
 @import "../styles/colors";
+@import "main";
 
 .App {
   padding: 0 1rem;
@@ -33,30 +34,3 @@
     }
   }
 }
-
-main {
-  display: flex;
-  flex-flow: row wrap;
-  //align-items: flex-start;
-  justify-content: space-evenly;
-  justify-items: stretch;
-}
-
-
-//
-//main {
-//  display: grid;
-//  grid-gap: 1rem;
-//}
-//
-//@media (min-width: 320px) {
-//  main {
-//    grid-template-columns: 1fr;
-//  }
-//}
-//
-//@media (min-width: 768px) {
-//  main {
-//    grid-template-columns: 1fr 1fr;
-//  }
-//}

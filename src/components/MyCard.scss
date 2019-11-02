@@ -1,13 +1,12 @@
 @import "../styles/colors";
 
 .mycard {
-    background-color: $snowSunny;
-    margin-bottom: 1rem;
+    background: linear-gradient($snowSunny, $snowWhite);
 }
 
 .App--dark {
     .mycard {
-        background-color: inherit;
+        background: $snowMan;
     }
 
     .mycard__title {

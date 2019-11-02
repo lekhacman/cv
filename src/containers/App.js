@@ -52,9 +52,9 @@ export class App extends React.Component {
           toggleTheme={this.toggleTheme}
         />
         <main>
+          <MyExperience />
           <MyContact />
           <MyCareer />
-          <MyExperience />
           <MyEdu />
           <MySkills />
         </main>

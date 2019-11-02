@@ -1,3 +1,22 @@
+@import "../styles/colors";
+
+#mycard--experience {
+  h3 {
+    padding-top: .2rem;
+    margin: .5rem 0;
+    border-top: .1rem solid;
+    border-image: linear-gradient(to right, $snowMan, $snowWhite) 100;
+  }
+}
+
+.App--dark {
+  #mycard--experience {
+    h3 {
+      border-image: linear-gradient(to left, $snowMan, $snowWhite) 100;
+    }
+  }
+}
+
 .technology-list {
   display: grid;
   grid-template-columns: 1fr 1fr;

@@ -1,5 +1,3 @@
-//@import "~bootstrap/scss/bootstrap-grid";
-//@import "~bootstrap/scss/utilities/float";
 @import "styles/colors";
 
 html {
@@ -11,6 +9,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   background-color: $snowWhite;
   color: $snowMan;
+
 }
 
 body {

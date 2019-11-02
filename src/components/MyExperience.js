@@ -136,7 +136,7 @@ export function MyExperience() {
             backing by complex IPOS&rsquo;s microservices.
           </li>
         </ul>
-        <label>Technology:</label>
+        <label style={{ pageBreakBefore: 'always' }}>Technology:</label>
         <ul className="technology-list">
           <li>JavaScript</li>
           <li>AngularJS</li>
