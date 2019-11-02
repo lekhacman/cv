@@ -112,8 +112,7 @@ export function MyExperience() {
           <small className={'text-secondary'}>(Jun 2016 - Mar 2018)</small>
         </p>
         <p>
-          From <b>junior developer</b> to <b>system integration leader</b> (what
-          a journey)
+          From <b>junior developer</b> to <b>system integration leader</b>
         </p>
         <label>Projects:</label>
         <ul>
