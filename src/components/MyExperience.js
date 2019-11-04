@@ -10,7 +10,8 @@ export function MyExperience() {
         <p>
           <a
             href={'https://www.spgroup.com.sg/'}
-            rel={'nofollow'}
+            target="_blank"
+            rel="noopener noreferrer nofollow"
             className={'employerLink'}
           >
             Singapore Power
@@ -27,7 +28,8 @@ export function MyExperience() {
         <p>
           <a
             href={'https://www.aviva.com.sg/'}
-            rel={'nofollow'}
+            target="_blank"
+            rel="noopener noreferrer nofollow"
             className={'employerLink'}
           >
             Aviva Asia Pacific
@@ -67,7 +69,8 @@ export function MyExperience() {
         <p>
           <a
             href={'https://www.lazada.com/'}
-            rel={'nofollow'}
+            target="_blank"
+            rel="noopener noreferrer nofollow"
             className={'employerLink'}
           >
             Lazada eLogistics
@@ -104,7 +107,8 @@ export function MyExperience() {
         <p>
           <a
             href={'http://www.dxc.technology/'}
-            rel={'nofollow'}
+            target="_blank"
+            rel="noopener noreferrer nofollow"
             className={'employerLink'}
           >
             DXC Technology
