@@ -18,10 +18,24 @@ export function MyExperience() {
           </a>{' '}
           <small className="text-secondary">(Dec 2019 - Current)</small>
         </p>
-        <label>Projects: TBD</label>
-        <ul></ul>
-        <label>Technology: TBD</label>
-        <ul></ul>
+        <label>Projects:</label>
+        <ul>
+          <li>
+            <b>Utilities account service</b>: develop a web application for
+            utilities service self-registration
+          </li>
+          <li>
+            <b>Centralized Cooling Sales kit</b>: develop a sales kit for
+            proposing and selling of cooling service
+          </li>
+        </ul>
+        <label>Technology:</label>
+        <ul className="technology-list">
+          <li>JavaScript</li>
+          <li>ReactJS</li>
+          <li>Redux</li>
+          <li>Golang</li>
+        </ul>
       </div>
       <div className="company">
         <h3>Software Engineer</h3>
