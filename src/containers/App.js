@@ -7,6 +7,7 @@ import { MyContact } from '../components/MyContact';
 import { MyCareer } from '../components/MyCareer';
 import { MyEdu } from '../components/MyEdu';
 import { MySkills } from '../components/MySkills';
+import { MyFAQ } from '../components/MyFAQ';
 
 const theme = {
   base: 'App',
@@ -57,6 +58,7 @@ export class App extends React.Component {
           <MyCareer />
           <MyEdu />
           <MySkills />
+          <MyFAQ />
         </main>
       </div>
     );

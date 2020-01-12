@@ -25,7 +25,7 @@ export function MyExperience() {
             utilities service self-registration
           </li>
           <li>
-            <b>Centralized Cooling Sales kit</b>: develop a sales kit for
+            <b>Centralized Cooling Sales kit</b>: develop a web app for
             proposing and selling of cooling service
           </li>
         </ul>

@@ -15,6 +15,7 @@ export function MyEdu() {
           Third prize in UEH 500 business startup contest: Mobifood business
           development
         </li>
+        <li>First prize in Physics at Phu Nhuan High School</li>
       </ul>
     </MyCard>
   );
