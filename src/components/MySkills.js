@@ -3,7 +3,7 @@ import React from 'react';
 import { MyCard } from './MyCard';
 import * as R from 'ramda';
 
-export function MySkills() {
+export default function MySkills() {
   const spec = {
     js: {
       title: 'JavaScript',

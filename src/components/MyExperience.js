@@ -2,7 +2,7 @@ import './MyExperience.scss';
 import React from 'react';
 import { MyCard } from './MyCard';
 
-export function MyExperience() {
+export default function MyExperience() {
   return (
     <MyCard title="Experience" id="experience">
       <div className="company">

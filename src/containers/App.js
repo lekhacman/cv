@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.scss';
-import { MyNav } from '../components/MyNav';
 import { THEME, ThemeService } from '../styles/ThemeService';
-import { MyExperience } from '../components/MyExperience';
-import { MyContact } from '../components/MyContact';
-import { MyCareer } from '../components/MyCareer';
-import { MyEdu } from '../components/MyEdu';
-import { MySkills } from '../components/MySkills';
-import { MyFAQ } from '../components/MyFAQ';
+import MyExperience from '../components/MyExperience';
+import MyContact from '../components/MyContact';
+import MyCareer from '../components/MyCareer';
+import MyEdu from '../components/MyEdu';
+import MySkills from '../components/MySkills';
+import MyFAQ from '../components/MyFAQ';
+import MyNav from '../components/MyNav';
 
 const theme = {
   base: 'App',

@@ -2,7 +2,7 @@ import './MyEdu.scss';
 import React from 'react';
 import { MyCard } from './MyCard';
 
-export function MyEdu() {
+export default function MyEdu() {
   return (
     <MyCard title="Education & Awards" id="edu">
       <h3>University of Economics HCMC</h3>

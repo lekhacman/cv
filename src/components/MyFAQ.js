@@ -2,7 +2,7 @@ import './MyFAQ.scss';
 import React from 'react';
 import { MyCard } from './MyCard';
 
-export function MyFAQ() {
+export default function MyFAQ() {
   return (
     <MyCard title="FAQ" id="faq">
       <ul>

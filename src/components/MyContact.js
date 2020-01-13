@@ -2,7 +2,7 @@ import './MyContact.scss';
 import React from 'react';
 import { MyCard } from './MyCard';
 
-export function MyContact() {
+export default function MyContact() {
   return (
     <MyCard title="Contact" id="contact">
       <div className="contact">

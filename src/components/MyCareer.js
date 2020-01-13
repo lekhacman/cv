@@ -1,7 +1,7 @@
 import React from 'react';
 import { MyCard } from './MyCard';
 
-export function MyCareer() {
+export default function MyCareer() {
   return (
     <MyCard title="Career Objectives" id="career">
       <p>
