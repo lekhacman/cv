@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.scss';
 import { THEME, ThemeService } from '../styles/ThemeService';
 import MyExperience from '../components/MyExperience';
@@ -9,60 +9,50 @@ import MySkills from '../components/MySkills';
 import MyFAQ from '../components/MyFAQ';
 import MyNav from '../components/MyNav';
 
-const theme = {
-  base: 'App',
-  LIGHT: 'App--light',
-  DARK: 'App--dark',
-};
+export default function App(props) {
+  const themeClassName = {
+    base: 'App',
+    LIGHT: 'App--light',
+    DARK: 'App--dark',
+  };
 
-export class App extends React.Component {
-  constructor(props) {
-    super(props);
-    const { _window } = props;
-    this.themeService = ThemeService(_window.localStorage);
-    this.themeService.register();
-    this.state = {
-      theme: {
-        isLight: this.themeService.get() === THEME.LIGHT,
-        appClassName: `${theme.base} ${theme[this.themeService.get()]}`,
-      },
-    };
-    this.toggleTheme = this.toggleTheme.bind(this);
-  }
+  const { _window } = props;
+  const themeService = ThemeService(_window.localStorage);
+  themeService.register();
 
-  toggleTheme() {
-    const isLight = !this.state.theme.isLight;
-    this.setState({
-      theme: {
-        isLight,
-        appClassName: `${theme.base} ${isLight ? theme.LIGHT : theme.DARK}`,
-      },
+  const [theme, setTheme] = useState({
+    isLight: themeService.get() === THEME.LIGHT,
+    appClassName: `${themeClassName.base} ${
+      themeClassName[themeService.get()]
+    }`,
+  });
+
+  function toggleTheme() {
+    const isLight = !theme.isLight;
+    setTheme({
+      isLight,
+      appClassName: `${themeClassName.base} ${
+        isLight ? themeClassName.LIGHT : themeClassName.DARK
+      }`,
     });
-    this.themeService.set(isLight ? THEME.LIGHT : THEME.DARK);
+    themeService.set(isLight ? THEME.LIGHT : THEME.DARK);
   }
 
-  render() {
-    const { _window } = this.props;
-    const { appClassName, isLight } = this.state.theme;
-
-    return (
-      <div className={appClassName}>
-        <MyNav
-          print={_window.print.bind(_window)}
-          isLightTheme={isLight}
-          toggleTheme={this.toggleTheme}
-        />
-        <main>
-          <MyExperience />
-          <MyContact />
-          <MyCareer />
-          <MyEdu />
-          <MySkills />
-          <MyFAQ />
-        </main>
-      </div>
-    );
-  }
+  return (
+    <div className={theme.appClassName}>
+      <MyNav
+        print={_window.print.bind(_window)}
+        isLightTheme={theme.isLight}
+        toggleTheme={toggleTheme}
+      />
+      <main>
+        <MyExperience />
+        <MyContact />
+        <MyCareer />
+        <MyEdu />
+        <MySkills />
+        <MyFAQ />
+      </main>
+    </div>
+  );
 }
-
-export default App;
