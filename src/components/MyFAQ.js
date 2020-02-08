@@ -7,7 +7,7 @@ export default function MyFAQ() {
     <MyCard title="FAQ" id="faq">
       <ul>
         <li>
-          <b>Where and how did I study code?</b> I'm a self-taught engineer.
+          <b>Where and how did you study code?</b> I'm a self-taught engineer.
           There 4 major sources that help me to acquire proficiency in
           programming:
           <ul>
@@ -36,7 +36,7 @@ export default function MyFAQ() {
           </ul>
         </li>
         <li>
-          <b>Why did i choose to become a coder?</b> I didn't. My dream is to
+          <b>Why did you choose to become a coder?</b> I didn't. My dream is to
           become an entrepreneur and to build a real-time analytic system to
           analyze and study behavior of users on the web in order to help
           marketers make good decisions on marketing stuffs (I study marketing
