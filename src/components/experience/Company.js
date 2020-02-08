@@ -12,6 +12,11 @@ export default function Company(props) {
           rel="noopener noreferrer nofollow"
           className={'employerLink'}
         >
+          <img
+            className="company-icon"
+            src={props.company.icon}
+            alt={`${props.company.name} icon`}
+          />
           {props.company.name}
         </a>{' '}
         <small className="text-secondary">({props.period})</small>
@@ -42,6 +47,7 @@ Company.propTypes = {
   company: PropTypes.shape({
     name: PropTypes.string.isRequired,
     homepage: PropTypes.string,
+    icon: PropTypes.string,
   }),
   period: PropTypes.string.isRequired,
   projects: PropTypes.arrayOf(

@@ -12,6 +12,7 @@ export default function MyExperience() {
       company: {
         name: 'Singapore Power',
         homepage: 'https://www.spgroup.com.sg/',
+        icon: 'https://openaccount.spgroup.com.sg/favicon.ico',
       },
       projects: [
         {
@@ -39,6 +40,8 @@ export default function MyExperience() {
       company: {
         name: 'Aviva Asia Pacific',
         homepage: 'https://www.aviva.com.sg/',
+        icon:
+          'https://cdn.aviva.com/static/core/v.4.13.0/images/favicon/favicon.ico',
       },
       projects: [
         {
@@ -68,6 +71,8 @@ export default function MyExperience() {
       company: {
         name: 'Lazada eLogistics',
         homepage: 'https://www.lazada.com/',
+        icon:
+          'https://www.lazada.com/static/code_img/new-lazada-logo-small.png',
       },
       projects: [
         {
@@ -95,6 +100,8 @@ export default function MyExperience() {
       company: {
         name: 'DXC Technology',
         homepage: 'http://www.dxc.technology/',
+        icon:
+          'https://www.dxc.technology/favicon.ico',
       },
       projects: [
         {
