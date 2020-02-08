@@ -22,6 +22,7 @@ export default function MyNav(props) {
       <div>
         <ul>
           <li>
+            {/*eslint-disable-next-line*/}
             <a href="#" onClick={toggleTheme}>
               {isLightTheme ? (
                 <FontAwesomeIcon icon={faMoon} size={iconSize} />
@@ -41,6 +42,7 @@ export default function MyNav(props) {
             </a>
           </li>
           <li>
+            {/*eslint-disable-next-line*/}
             <a href="#" onClick={print}>
               <FontAwesomeIcon icon={faPrint} size={iconSize} />
             </a>

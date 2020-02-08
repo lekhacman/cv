@@ -10,36 +10,24 @@ import MyFAQ from '../components/MyFAQ';
 import MyNav from '../components/MyNav';
 
 export default function App(props) {
-  const themeClassName = {
-    base: 'App',
-    LIGHT: 'App--light',
-    DARK: 'App--dark',
-  };
-
   const { _window } = props;
   const themeService = ThemeService(_window.localStorage);
   themeService.register();
 
   const [theme, setTheme] = useState({
     isLight: themeService.get() === THEME.LIGHT,
-    appClassName: `${themeClassName.base} ${
-      themeClassName[themeService.get()]
-    }`,
   });
 
   function toggleTheme() {
     const isLight = !theme.isLight;
     setTheme({
       isLight,
-      appClassName: `${themeClassName.base} ${
-        isLight ? themeClassName.LIGHT : themeClassName.DARK
-      }`,
     });
     themeService.set(isLight ? THEME.LIGHT : THEME.DARK);
   }
 
   return (
-    <div className={theme.appClassName}>
+    <div className={`App App--${theme.isLight ? 'light' : 'dark'}`}>
       <MyNav
         print={_window.print.bind(_window)}
         isLightTheme={theme.isLight}

@@ -12,7 +12,7 @@ export default function MyFAQ() {
           programming:
           <ul>
             <li>
-              <b>Mentors</b> who are professional developers and architects.
+              <b>Mentors</b> who are professional developers and architects
             </li>
             <li>
               My job at <b>DXC Technology</b>
@@ -31,7 +31,7 @@ export default function MyFAQ() {
               free using open courses
             </li>
             <li>
-              <b>Books.</b> I admit that I'm a serious bookworm.
+              <b>Books.</b> I admit that I'm a serious bookworm
             </li>
           </ul>
         </li>
@@ -41,10 +41,10 @@ export default function MyFAQ() {
           analyze and study behavior of users on the web in order to help
           marketers make good decisions on marketing stuffs (I study marketing
           and market research). But I didn't know how to code at the time. So...
-          I taught myself coding. Unfortunately, the more I dive deep into code,
-          the more fun it is, and eventually, i totally forgot about my initial
-          target to become an entrepreneur. I just love coding and become very
-          good at it.
+          I taught myself coding. Eventually, the more I dive deep into code,
+          the more fun it becomes, then, i totally forgot about my initial goal
+          to become an entrepreneur. I fall in love with code and become very
+          good at it
         </li>
       </ul>
     </MyCard>
