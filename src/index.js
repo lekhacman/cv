@@ -3,8 +3,24 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 import App from './containers/App';
 import * as serviceWorker from './serviceWorker';
+import ThemeStore from './api/theme.store';
 
-ReactDOM.render(<App _window={window} />, document.getElementById('root'));
+// Bootstrap
+
+/**
+ * App Context
+ * @type {{store: {theme: {set: setTheme, get: getTheme}}, print: function}}
+ * @typedef AppCtx
+ */
+const appCtx = {
+  store: {
+    theme: ThemeStore(window.localStorage),
+  },
+  print: window.print.bind(window),
+};
+
+// Hooray
+ReactDOM.render(<App appCtx={appCtx} />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

@@ -1,1 +1,1 @@
-# Andrew Le CV [![CircleCI Status](https://circleci.com/gh/lekhacman/cv.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/lekhacman/cv)
+# Andrew Le's CV [![CircleCI Status](https://circleci.com/gh/lekhacman/cv.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/lekhacman/cv) [![Coverage Status](https://coveralls.io/repos/github/lekhacman/cv/badge.svg?branch=master)](https://coveralls.io/github/lekhacman/cv?branch=master)

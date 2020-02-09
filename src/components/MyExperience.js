@@ -1,6 +1,6 @@
 import './MyExperience.scss';
 import React from 'react';
-import { MyCard } from './MyCard';
+import MyCard from './MyCard';
 import Company from './experience/Company';
 
 export default function MyExperience() {

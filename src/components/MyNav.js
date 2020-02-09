@@ -23,7 +23,7 @@ export default function MyNav(props) {
         <ul>
           <li>
             {/*eslint-disable-next-line*/}
-            <a href="#" onClick={toggleTheme}>
+            <a href="#" data-testid="theme-icon" onClick={toggleTheme}>
               {isLightTheme ? (
                 <FontAwesomeIcon icon={faMoon} size={iconSize} />
               ) : (

@@ -1,6 +1,6 @@
 import './MySkills.scss';
 import React from 'react';
-import { MyCard } from './MyCard';
+import MyCard from './MyCard';
 import * as R from 'ramda';
 
 export default function MySkills() {

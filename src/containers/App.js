@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import './App.scss';
-import { THEME, ThemeService } from '../styles/ThemeService';
+import { THEME } from '../api/theme.store';
 import MyExperience from '../components/MyExperience';
 import MyContact from '../components/MyContact';
 import MyCareer from '../components/MyCareer';
@@ -10,12 +11,9 @@ import MyFAQ from '../components/MyFAQ';
 import MyNav from '../components/MyNav';
 
 export default function App(props) {
-  const { _window } = props;
-  const themeService = ThemeService(_window.localStorage);
-  themeService.register();
-
+  const themeStore = props.appCtx.store.theme;
   const [theme, setTheme] = useState({
-    isLight: themeService.get() === THEME.LIGHT,
+    isLight: themeStore.get() === THEME.LIGHT,
   });
 
   function toggleTheme() {
@@ -23,13 +21,13 @@ export default function App(props) {
     setTheme({
       isLight,
     });
-    themeService.set(isLight ? THEME.LIGHT : THEME.DARK);
+    themeStore.set(isLight ? THEME.LIGHT : THEME.DARK);
   }
 
   return (
     <div className={`App App--${theme.isLight ? 'light' : 'dark'}`}>
       <MyNav
-        print={_window.print.bind(_window)}
+        print={props.appCtx.print}
         isLightTheme={theme.isLight}
         toggleTheme={toggleTheme}
       />
@@ -44,3 +42,15 @@ export default function App(props) {
     </div>
   );
 }
+
+App.propTypes = {
+  appCtx: PropTypes.shape({
+    store: PropTypes.shape({
+      theme: PropTypes.shape({
+        get: PropTypes.func,
+        set: PropTypes.func,
+      }),
+    }),
+    print: PropTypes.func,
+  }),
+};

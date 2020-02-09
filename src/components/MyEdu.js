@@ -1,6 +1,6 @@
 import './MyEdu.scss';
 import React from 'react';
-import { MyCard } from './MyCard';
+import MyCard from './MyCard';
 
 export default function MyEdu() {
   return (
