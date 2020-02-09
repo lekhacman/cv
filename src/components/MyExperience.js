@@ -99,9 +99,8 @@ export default function MyExperience() {
       period: 'Jun 2016 - Mar 2018',
       company: {
         name: 'DXC Technology',
-        homepage: 'http://www.dxc.technology/',
-        icon:
-          'https://www.dxc.technology/favicon.ico',
+        homepage: 'https://www.dxc.technology/',
+        icon: 'https://www.dxc.technology/favicon.ico',
       },
       projects: [
         {
@@ -131,6 +130,81 @@ export default function MyExperience() {
         'Sass lang',
       ],
     },
+    // {
+    //   id: 'milestones',
+    //   position: 'Research Assistant',
+    //   period: 'Nov 2015 - May 2016',
+    //   company: {
+    //     name: 'Milestones',
+    //     homepage: 'https://milestonesvn.com/en/',
+    //     icon: '/favicon.ico',
+    //   },
+    //   projects: [
+    //     {
+    //       name: 'Iron Man',
+    //       description:
+    //         "is a qualitative research project to understand doctors' opinions and practices over heart diseases medication",
+    //     },
+    //     {
+    //       name: 'ISB',
+    //       description:
+    //         "is a quantitative research project to study students' behaviors and opinions over choosing a bachelor degree",
+    //     },
+    //   ],
+    //   technology: ['Office', 'Laravel (PHP)', 'MySQL'],
+    // },
+    // {
+    //   id: 'ibm',
+    //   position: 'Marketing Executive',
+    //   period: 'Nov 2015 - May 2016',
+    //   company: {
+    //     name: 'Institute of Business and Management (IBM)',
+    //     homepage: '',
+    //     icon:
+    //       'http://www.ibm.edu.vn/wp-content/uploads/2016/09/cropped-Untitled-1-32x32.png',
+    //   },
+    //   projects: [
+    //     {
+    //       name: 'MBA',
+    //       description:
+    //         'marketing planning, building digital broadcast channels, search engine optimizing, and executing ads, promotion campaigns',
+    //     },
+    //     {
+    //       name: 'IBM website',
+    //       description:
+    //         'create the official website for the institute using Wordpress and VPS',
+    //     },
+    //     {
+    //       name: 'IELTS landing page',
+    //       description: 'build a landing page for IELTS program',
+    //     },
+    //   ],
+    //   technology: [
+    //     'Virtual Private Server',
+    //     'Wordpress',
+    //     'CentOS',
+    //     'Google Analytics',
+    //     'Google Ads',
+    //   ],
+    // },
+    // {
+    //   id: 'kimvang',
+    //   position: 'Marketing Executive',
+    //   period: 'Jun 2014 - Dec 2014',
+    //   company: {
+    //     name: 'Kim Vang Garment',
+    //     homepage: '',
+    //     icon: '/favicon.ico',
+    //   },
+    //   projects: [
+    //     {
+    //       name: 'digital marketing',
+    //       description:
+    //         "Develop company's digital marketing ecosystem, search engine optimizing",
+    //     },
+    //   ],
+    //   technology: ['Google Analytics', 'Google Ads'],
+    // },
   ];
   return (
     <MyCard title="Experience" id="experience">

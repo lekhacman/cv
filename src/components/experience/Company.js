@@ -6,19 +6,23 @@ export default function Company(props) {
     <div className="company">
       <h3>{props.position}</h3>
       <p>
-        <a
-          href={props.company.homepage}
-          target="_blank"
-          rel="noopener noreferrer nofollow"
-          className={'employerLink'}
-        >
-          <img
-            className="company-icon"
-            src={props.company.icon}
-            alt={`${props.company.name} icon`}
-          />
-          {props.company.name}
-        </a>{' '}
+        {props.company.homepage ? (
+          <a
+            href={props.company.homepage}
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            className={'employerLink'}
+          >
+            <img
+              className="company-icon"
+              src={props.company.icon}
+              alt={`${props.company.name} icon`}
+            />
+            {props.company.name}
+          </a>
+        ) : (
+          props.company.name
+        )}{' '}
         <small className="text-secondary">({props.period})</small>
       </p>
       <label>Projects:</label>
