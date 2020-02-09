@@ -76,7 +76,7 @@ export default function MyExperience() {
       },
       projects: [
         {
-          name: 'Logistic management system:',
+          name: 'Logistic management system',
           description:
             'building & connecting sophisticated logistic systems (seller, warehouse, express) to help managing & delivering cargo become easy and efficient. The job requires heavy system integration tasks, writing 100% coverage unit tests and handling issues on production environment. Extensive usage of Docker container & microservices & CI/CD tools',
         },
