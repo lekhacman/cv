@@ -93,7 +93,6 @@
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,ts,tsx}",
       "!<rootDir>/node_modules/",
-      "!<rootDir>/src/index.js",
       "!<rootDir>/src/serviceWorker.js"
     ]
   }
