@@ -37,7 +37,7 @@ export default function App(props) {
         <MyCareer />
         <MyEdu />
         <MySkills />
-        <MyFAQ />
+        {/*<MyFAQ />*/}
       </main>
     </div>
   );
