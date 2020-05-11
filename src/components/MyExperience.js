@@ -30,8 +30,12 @@ export default function MyExperience() {
           description:
             'develop a web app for proposing and selling of cooling service',
         },
+        {
+          name: 'Open Utilities Account',
+          description: 'port over the server side application written Go to Java'
+        }
       ],
-      technology: ['JavaScript', 'ReactJS', 'Redux', 'Golang'],
+      technology: ['JavaScript', 'ReactJS', 'Redux', 'Golang', 'Java', 'Spring Boot'],
     },
     {
       id: 'aviva',

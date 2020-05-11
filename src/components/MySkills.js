@@ -51,7 +51,7 @@ export default function MySkills() {
               style={{ gridRow: idx + 1 }}
             >
               <div className="score-bar__score" style={{ width: skill.rating }}>
-                <span>{skill.rating}</span>
+                {/*<span>{skill.rating}</span>*/}
               </div>
             </div>
           ),
