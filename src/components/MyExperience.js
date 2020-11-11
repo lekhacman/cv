@@ -16,26 +16,57 @@ export default function MyExperience() {
       },
       projects: [
         {
+          name: 'Kiosk',
+          description:
+            'Develop and maintain the self-serve SP services application. If you visit our Customer Service Centre at Toa Payoh, you will see this application running on the self-serve kiosk machines',
+        },
+        {
           name: 'Application status',
-          description:
-            'a web application to check progress of an online registration/termination service process',
+          description: (
+            <span>
+              develop the application to check progress of an online
+              registration/termination service process. See more @{' '}
+              <a href="https://trackyouraccount.spgroup.com.sg">
+                trackyouraccount.spgroup.com.sg
+              </a>
+            </span>
+          ),
         },
         {
-          name: 'Utilities account service',
-          description:
-            'develop a web application for utilities service self-registration',
-        },
-        {
-          name: 'Centralized Cooling Sales kit',
-          description:
-            'develop a web app for proposing and selling of cooling service',
+          name: 'Tengah Centralized Cooling Sales kit',
+          description: (
+            <span>
+              develop the application that helps our representatives in
+              consulting our customers on the centralized cooling utilities. You
+              will see this app when buying a new apartment in Tengah residence
+              . See more @{' '}
+              <a href="https://www.mytengah.sg/centralised-cooling">
+                mytengah.sg
+              </a>
+            </span>
+          ),
         },
         {
           name: 'Open Utilities Account',
-          description: 'port over the server side application written Go to Java'
-        }
+          description: (
+            <span>
+              develop and maintain the Open Utilities Account application. See
+              more @{' '}
+              <a href="https://openaccount.spgroup.com.sg">
+                openaccount.spgroup.com.sg
+              </a>
+            </span>
+          ),
+        },
       ],
-      technology: ['JavaScript', 'ReactJS', 'Redux', 'Golang', 'Java', 'Spring Boot'],
+      technology: [
+        'JavaScript',
+        'ReactJS',
+        'Redux',
+        'Golang',
+        'Java',
+        'Spring Boot',
+      ],
     },
     {
       id: 'aviva',
