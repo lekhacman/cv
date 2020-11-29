@@ -1,11 +1,11 @@
-@import "../styles/colors";
+@import '../styles/colors';
 
 #mycard--experience {
   h3 {
-    padding-top: .2rem;
-    margin: .5rem 0;
-    border-top: .1rem solid;
     border-image: linear-gradient(to right, $snowMan, $snowWhite) 100;
+    border-top: 0.1rem solid;
+    margin: 0.5rem 0;
+    padding-top: 0.2rem;
   }
 }
 
@@ -16,10 +16,11 @@
     }
   }
 }
+
 img.company-icon {
+  display: inline;
   height: 1rem;
   margin-right: 0.5rem;
-  display: inline;
 }
 
 .technology-list {

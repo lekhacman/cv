@@ -1,7 +1,7 @@
 .contact {
   display: grid;
+  grid-gap: 0.5rem;
   grid-template-columns: 1fr 6fr;
-  grid-gap: .5rem;
 
   a {
     text-decoration: none;

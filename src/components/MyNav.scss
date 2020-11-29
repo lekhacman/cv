@@ -1,5 +1,5 @@
 //@import "../styles/colors";
-@import "../styles/screen";
+@import '../styles/screen';
 //$hamburger-layer-color: $snowMan;
 //
 //@import "~animate.css/animate.min.css";
@@ -17,8 +17,8 @@
 //}
 //
 h1 {
-  margin: 1rem 0;
   font-weight: 700;
+  margin: 1rem 0;
 }
 //header nav {
 //  display: flex;
@@ -40,11 +40,11 @@ header div {
 }
 
 header > div:last-child > ul {
-  list-style: none;
-  padding: 0;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+  list-style: none;
+  padding: 0;
 
   @media (min-width: $screen-sm) {
     justify-content: flex-end;
@@ -53,6 +53,7 @@ header > div:last-child > ul {
   li:first-child {
     margin-left: 0;
   }
+
   li {
     margin-left: 1rem;
   }
