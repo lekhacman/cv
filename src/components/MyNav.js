@@ -1,18 +1,21 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faEnvelope,
+  faMoon,
   faPhone,
   faPrint,
-  faMoon,
   faSun,
 } from '@fortawesome/free-solid-svg-icons';
 import './MyNav.scss';
 import PropTypes from 'prop-types';
+import { THEME } from '../api/theme.store';
+import ThemeContext from '../ctx/ThemeContext';
 
-export default function MyNav(props) {
-  const { toggleTheme, isLightTheme, print } = props;
-  const iconSize = '2x';
+function MyNav(props) {
+  const { toggleTheme, print } = props;
+  const ICON_SIZE = '2x';
+  const icon = useContext(ThemeContext) === THEME.LIGHT ? faMoon : faSun;
 
   return (
     <header>
@@ -23,28 +26,24 @@ export default function MyNav(props) {
         <ul>
           <li>
             {/*eslint-disable-next-line*/}
-            <a href="#" data-testid="theme-icon" onClick={toggleTheme}>
-              {isLightTheme ? (
-                <FontAwesomeIcon icon={faMoon} size={iconSize} />
-              ) : (
-                <FontAwesomeIcon icon={faSun} size={iconSize} />
-              )}
-            </a>
+            <button data-testid="theme-icon" onClick={toggleTheme}>
+              <FontAwesomeIcon icon={icon} size={ICON_SIZE} />
+            </button>
           </li>
           <li>
             <a href="mailto:lekhacman@outlook.com">
-              <FontAwesomeIcon icon={faEnvelope} size={iconSize} />
+              <FontAwesomeIcon icon={faEnvelope} size={ICON_SIZE} />
             </a>
           </li>
           <li>
             <a href="tel:+6587686989">
-              <FontAwesomeIcon icon={faPhone} size={iconSize} />
+              <FontAwesomeIcon icon={faPhone} size={ICON_SIZE} />
             </a>
           </li>
           <li>
             {/*eslint-disable-next-line*/}
             <a href="#" onClick={print}>
-              <FontAwesomeIcon icon={faPrint} size={iconSize} />
+              <FontAwesomeIcon icon={faPrint} size={ICON_SIZE} />
             </a>
           </li>
         </ul>
@@ -55,6 +54,7 @@ export default function MyNav(props) {
 
 MyNav.propTypes = {
   print: PropTypes.func,
-  isLightTheme: PropTypes.bool,
   toggleTheme: PropTypes.func,
 };
+
+export default MyNav;

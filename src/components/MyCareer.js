@@ -3,13 +3,10 @@ import MyCard from './MyCard';
 
 export default function MyCareer() {
   return (
-    <MyCard title="Career Objectives" id="career">
+    <MyCard title="About me" id="career">
       <p>
-        <strong>Short term: </strong>Develop useful applications for enterprises
-      </p>
-      <p>
-        <strong>Long term: </strong>Providing digital transformation services
-        for business
+        I wake up in the middle the night, fix the bloody bug and get back to
+        sleep 😌
       </p>
     </MyCard>
   );

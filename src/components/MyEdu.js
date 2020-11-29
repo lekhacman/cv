@@ -5,7 +5,10 @@ import MyCard from './MyCard';
 export default function MyEdu() {
   return (
     <MyCard title="Education & Awards" id="edu">
-      <h3>University of Economics HCMC</h3>
+      <h3>University of Science</h3>
+      <p>I am studying for a Bachelor degree in Information Technology</p>
+
+      <h3>University of Economics</h3>
       <p>Bachelor of Business Administration & Marketing</p>
 
       <h3>Awards</h3>

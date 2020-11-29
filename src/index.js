@@ -14,7 +14,7 @@ import ThemeStore from './api/theme.store';
  */
 const appCtx = {
   store: {
-    theme: ThemeStore(window.localStorage),
+    theme: ThemeStore(window),
   },
   print: window.print.bind(window),
 };

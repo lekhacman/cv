@@ -17,25 +17,25 @@ export default function MySkills() {
       title: 'NodeJS',
       rating: '80%',
     },
-    htmlCss: {
-      title: 'HTML/CSS',
-      rating: '70%',
-    },
-    linux: {
-      title: 'Linux',
+    java: {
+      title: 'Java',
       rating: '60%',
     },
     go: {
       title: 'Golang',
       rating: '50%',
     },
-    javaPhp: {
-      title: 'Java/PHP',
-      rating: '40%',
+    linux: {
+      title: 'Linux',
+      rating: '50%',
     },
-    aws: {
-      title: 'AWS Cloud',
-      rating: '60%',
+    container: {
+      title: 'Docker & k8s',
+      rating: '50%',
+    },
+    cloud: {
+      title: 'Cloud',
+      rating: '50%',
     },
   };
 
@@ -67,7 +67,6 @@ export default function MySkills() {
         {labels}
         {skills}
       </div>
-      <div></div>
     </MyCard>
   );
 }

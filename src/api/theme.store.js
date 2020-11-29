@@ -4,21 +4,21 @@
  * @enum {string}
  */
 export const THEME = {
-  LIGHT: 'LIGHT',
-  DARK: 'DARK',
+  LIGHT: 'light',
+  DARK: 'dark',
 };
 
 /**
- * Theme Storage
+ *
  * @param {Storage} localStorage
- * @returns {{set: setTheme, get: getTheme}}
+ * @param {function} matchMedia
+ * @return {{set: set, get: (function(): THEME)}}
  */
-function ThemeStore(localStorage) {
+function ThemeStore({ localStorage, matchMedia }) {
   const key = 'theme';
   /**
    * Get current theme
-   * @typedef getTheme
-   * @returns {string}
+   * @returns {THEME}
    */
   function get() {
     return localStorage.getItem(key);
@@ -26,11 +26,10 @@ function ThemeStore(localStorage) {
 
   /**
    * Set theme
-   * @typedef setTheme
-   * @param {string} theme
+   * @param {THEME} theme
    */
   function set(theme) {
-    if (!THEME.hasOwnProperty(theme)) {
+    if (!THEME.hasOwnProperty(theme.toUpperCase())) {
       throw new TypeError(`'${theme}' is not recognized as a theme`);
     }
     localStorage.setItem(key, theme);
@@ -38,7 +37,11 @@ function ThemeStore(localStorage) {
 
   // Self-initialize theme value
   if (!get()) {
-    set(THEME.LIGHT);
+    let preferDark = false;
+    try {
+      preferDark = matchMedia('(prefers-color-scheme: dark)').matches;
+    } catch (err) {}
+    set(preferDark ? THEME.DARK : THEME.LIGHT);
   }
 
   return {

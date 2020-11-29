@@ -1,7 +1,7 @@
 import ThemeStore, { THEME } from './theme.store';
 
 describe('Theme Storage', function() {
-  const themeStore = ThemeStore(window.localStorage);
+  const themeStore = ThemeStore(window);
 
   it('should self-initialize', function() {
     expect(themeStore.get()).toEqual(THEME.LIGHT);
@@ -13,7 +13,7 @@ describe('Theme Storage', function() {
   });
 
   it('should not override current theme', function() {
-    const otherIntanceOfThemeStore = ThemeStore(window.localStorage);
+    const otherIntanceOfThemeStore = ThemeStore(window);
     expect(otherIntanceOfThemeStore.get()).toEqual(THEME.DARK);
   });
 

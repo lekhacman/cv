@@ -57,7 +57,7 @@ Company.propTypes = {
   projects: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string.isRequired,
-      description: PropTypes.string,
+      description: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
     })
   ),
   technology: PropTypes.arrayOf(PropTypes.string),
